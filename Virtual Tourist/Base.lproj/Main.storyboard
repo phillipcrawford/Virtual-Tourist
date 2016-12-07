@@ -53,5 +53,29 @@
             </objects>
             <point key="canvasLocation" x="-42.399999999999999" y="145.27736131934034"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ylN-7K-Ncx">
+            <objects>
+                <viewController id="cTN-E7-HEt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qW0-MW-IJb"/>
+                        <viewControllerLayoutGuide type="bottom" id="DFg-gD-zba"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wat-2u-eQp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Cc5-ku-cfl">
+                                <frame key="frameInset" minX="67" minY="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhh-QP-kJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706" y="143"/>
+        </scene>
     </scenes>
 </document>

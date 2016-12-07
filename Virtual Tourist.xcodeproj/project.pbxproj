@@ -14,6 +14,7 @@
 		F010DC001DF69BA500C8B0E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F010DBFE1DF69BA500C8B0E5 /* LaunchScreen.storyboard */; };
 		F010DC0B1DF69BA500C8B0E5 /* Virtual_TouristTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010DC0A1DF69BA500C8B0E5 /* Virtual_TouristTests.swift */; };
 		F010DC161DF69BA500C8B0E5 /* Virtual_TouristUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010DC151DF69BA500C8B0E5 /* Virtual_TouristUITests.swift */; };
+		F010DC251DF848D700C8B0E5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F010DC231DF848D700C8B0E5 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F010DC111DF69BA500C8B0E5 /* Virtual TouristUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Virtual TouristUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F010DC151DF69BA500C8B0E5 /* Virtual_TouristUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virtual_TouristUITests.swift; sourceTree = "<group>"; };
 		F010DC171DF69BA500C8B0E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F010DC241DF848D700C8B0E5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				F010DBF51DF69BA500C8B0E5 /* AppDelegate.swift */,
 				F010DBF71DF69BA500C8B0E5 /* ViewController.swift */,
 				F010DBF91DF69BA500C8B0E5 /* Main.storyboard */,
+				F010DC231DF848D700C8B0E5 /* Model.xcdatamodeld */,
 				F010DBFC1DF69BA500C8B0E5 /* Assets.xcassets */,
 				F010DBFE1DF69BA500C8B0E5 /* LaunchScreen.storyboard */,
 				F010DC011DF69BA500C8B0E5 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				F010DBF81DF69BA500C8B0E5 /* ViewController.swift in Sources */,
 				F010DBF61DF69BA500C8B0E5 /* AppDelegate.swift in Sources */,
+				F010DC251DF848D700C8B0E5 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +525,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F010DC231DF848D700C8B0E5 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F010DC241DF848D700C8B0E5 /* Model.xcdatamodel */,
+			);
+			currentVersion = F010DC241DF848D700C8B0E5 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F010DBEA1DF69BA500C8B0E5 /* Project object */;
 }
