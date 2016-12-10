@@ -15,6 +15,7 @@
 		F010DC0B1DF69BA500C8B0E5 /* Virtual_TouristTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010DC0A1DF69BA500C8B0E5 /* Virtual_TouristTests.swift */; };
 		F010DC161DF69BA500C8B0E5 /* Virtual_TouristUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010DC151DF69BA500C8B0E5 /* Virtual_TouristUITests.swift */; };
 		F010DC251DF848D700C8B0E5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F010DC231DF848D700C8B0E5 /* Model.xcdatamodeld */; };
+		F010DC271DFBC58700C8B0E5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010DC261DFBC58700C8B0E5 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F010DC151DF69BA500C8B0E5 /* Virtual_TouristUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virtual_TouristUITests.swift; sourceTree = "<group>"; };
 		F010DC171DF69BA500C8B0E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F010DC241DF848D700C8B0E5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F010DC261DFBC58700C8B0E5 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F010DBF71DF69BA500C8B0E5 /* ViewController.swift */,
 				F010DBF91DF69BA500C8B0E5 /* Main.storyboard */,
 				F010DC231DF848D700C8B0E5 /* Model.xcdatamodeld */,
+				F010DC261DFBC58700C8B0E5 /* CoreDataStack.swift */,
 				F010DBFC1DF69BA500C8B0E5 /* Assets.xcassets */,
 				F010DBFE1DF69BA500C8B0E5 /* LaunchScreen.storyboard */,
 				F010DC011DF69BA500C8B0E5 /* Info.plist */,
@@ -265,6 +268,7 @@
 				F010DBF81DF69BA500C8B0E5 /* ViewController.swift in Sources */,
 				F010DBF61DF69BA500C8B0E5 /* AppDelegate.swift in Sources */,
 				F010DC251DF848D700C8B0E5 /* Model.xcdatamodeld in Sources */,
+				F010DC271DFBC58700C8B0E5 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
