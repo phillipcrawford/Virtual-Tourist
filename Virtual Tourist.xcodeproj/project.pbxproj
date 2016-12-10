@@ -107,8 +107,8 @@
 		F010DBF41DF69BA500C8B0E5 /* Virtual Tourist */ = {
 			isa = PBXGroup;
 			children = (
-				F010DC301DFBCAA800C8B0E5 /* Model */,
 				F010DBF51DF69BA500C8B0E5 /* AppDelegate.swift */,
+				F010DC301DFBCAA800C8B0E5 /* Model */,
 				F010DBF91DF69BA500C8B0E5 /* Main.storyboard */,
 				F010DBFC1DF69BA500C8B0E5 /* Assets.xcassets */,
 				F010DBFE1DF69BA500C8B0E5 /* LaunchScreen.storyboard */,
