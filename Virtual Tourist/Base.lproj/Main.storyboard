@@ -26,7 +26,7 @@
         <!--Virtual Tourist-->
         <scene sceneID="hQ2-fw-pTz">
             <objects>
-                <viewController id="2bb-3R-gwR" sceneMemberID="viewController">
+                <viewController id="2bb-3R-gwR" customClass="MapViewController" customModule="Virtual_Tourist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jh0-kP-VHg"/>
                         <viewControllerLayoutGuide type="bottom" id="Gn3-cE-QAe"/>
@@ -39,15 +39,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="avg-EO-4HT" firstAttribute="leading" secondItem="Mf4-hJ-697" secondAttribute="leadingMargin" constant="-16" id="G8D-g1-kWj"/>
+                            <constraint firstItem="avg-EO-4HT" firstAttribute="leading" secondItem="Mf4-hJ-697" secondAttribute="leadingMargin" constant="-20" id="G8D-g1-kWj"/>
                             <constraint firstItem="avg-EO-4HT" firstAttribute="top" secondItem="Jh0-kP-VHg" secondAttribute="bottom" id="Ghe-Ut-TVh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="avg-EO-4HT" secondAttribute="trailing" constant="-16" id="cCM-it-w1G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="avg-EO-4HT" secondAttribute="trailing" constant="-20" id="cCM-it-w1G"/>
                             <constraint firstItem="Gn3-cE-QAe" firstAttribute="top" secondItem="avg-EO-4HT" secondAttribute="bottom" id="eYm-E8-6ak"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Virtual Tourist" id="mUD-Sa-wLM" userLabel="Virtual Tourist">
                         <barButtonItem key="leftBarButtonItem" title="OK" id="Od9-aW-q1f"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="map" destination="avg-EO-4HT" id="gdY-jz-vOa"/>
+                        <segue destination="cTN-E7-HEt" kind="show" id="Ufn-RS-QVG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5e-8M-55L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,12 +69,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Cc5-ku-cfl">
-                                <frame key="frameInset" minX="67" minY="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Cc5-ku-cfl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="ioZ-h2-fnN"/>
+                                </constraints>
                             </mapView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5I7-Sm-mYa">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sGd-ff-1Gb">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gZQ-ac-of2">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFs-Lh-iTW">
+                                <items>
+                                    <barButtonItem title="Item" id="mbg-Bs-PY6"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gFs-Lh-iTW" firstAttribute="leading" secondItem="wat-2u-eQp" secondAttribute="leadingMargin" constant="-16" id="HJ6-wr-AW0"/>
+                            <constraint firstItem="gFs-Lh-iTW" firstAttribute="top" secondItem="5I7-Sm-mYa" secondAttribute="bottom" id="IdS-FD-D3B"/>
+                            <constraint firstItem="DFg-gD-zba" firstAttribute="top" secondItem="gFs-Lh-iTW" secondAttribute="bottom" id="Pbd-Pg-HD3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gFs-Lh-iTW" secondAttribute="trailing" constant="-16" id="fZI-j7-jhb"/>
+                            <constraint firstItem="Cc5-ku-cfl" firstAttribute="top" secondItem="qW0-MW-IJb" secondAttribute="bottom" id="gz4-0R-PLj"/>
+                            <constraint firstItem="5I7-Sm-mYa" firstAttribute="top" secondItem="Cc5-ku-cfl" secondAttribute="bottom" id="j6N-bf-ZPC"/>
+                            <constraint firstItem="5I7-Sm-mYa" firstAttribute="leading" secondItem="wat-2u-eQp" secondAttribute="leadingMargin" constant="-16" id="nVy-X3-jkv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5I7-Sm-mYa" secondAttribute="trailing" constant="-16" id="nZi-WU-iXZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cc5-ku-cfl" secondAttribute="trailing" constant="-16" id="phe-Bl-UAk"/>
+                            <constraint firstItem="Cc5-ku-cfl" firstAttribute="leading" secondItem="wat-2u-eQp" secondAttribute="leadingMargin" constant="-16" id="trD-7b-zvD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhh-QP-kJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
